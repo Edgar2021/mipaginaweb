@@ -1,6 +1,6 @@
 <?php
 
-$con=mysqli_connect('mipaginaweb','root','', '127_0_0_1.sql') or die('Error en la conexion servidor');
+$con=mysqli_connect('localhost','root','', 'formulario') or die('Error en la conexion servidor');
 
 $sql="INSERT INTO datos
 VALUES(null, '".$_POST["nombre"]."','".$_POST["telefono"]."','".$_POST["email"]."','".$_POST["mensaje"]."')";
